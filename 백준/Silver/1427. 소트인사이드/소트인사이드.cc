@@ -15,8 +15,12 @@ int main(void)
 		if (n < 1)
 			break;
 	}
-	sort(v.begin(), v.end(), greater<>());
+
+	sort(v.begin(), v.end());
+	reverse(v.begin(), v.end());
+	
 	for (int i = 0; i < v.size(); i++)
 		cout << v[i];
 	return 0;
+
 }
